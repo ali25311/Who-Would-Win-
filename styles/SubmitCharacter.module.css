@@ -1,0 +1,79 @@
+.submitPageContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  padding: 2.5em;
+}
+
+.submitPageHeading {
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 1px 4px 1px #000000;
+}
+
+.formContainer {
+  margin: 3em auto;
+  background-color: #2b2b2b;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  padding: 0.1em 1em 1em 1em;
+  width: 65%;
+  box-shadow: 4px 4px 4px #000000;
+  max-height: 30rem;
+}
+
+.formHeading {
+  color: #ffffff;
+  text-shadow: 1px 3px 1px #000000;
+  font-size: 1.75rem;
+  padding: 0 0.15em;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1500px) {
+  .formHeading {
+    font-size: 1.85rem;
+    padding: 0 0.15em;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .formHeading {
+    font-size: 1.5rem;
+    padding: 0 0.15em;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .submitPageContainer {
+    padding: 1.5em;
+  }
+  .formHeading {
+    font-size: 1.3rem;
+    padding: 0 0.15em;
+    font-weight: 600;
+  }
+  .formContainer {
+    margin: 2em auto;
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .submitPageContainer {
+    padding: 0.25em;
+  }
+
+  .formHeading {
+    font-size: 1.25rem;
+    padding: 0 0.15em;
+    font-weight: 600;
+  }
+
+  .formContainer {
+    margin: 2em auto;
+    width: 98%;
+  }
+}

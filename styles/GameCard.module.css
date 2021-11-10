@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.flexGame {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.nameArea {
+	font-style: italic;
+	font-family: "Open Sans", Impact;
+	text-align: center;
+	font-size: 1.5rem;
+	color: #fff;
+	letter-spacing: 1px;
+	font-weight: 700;
+	text-transform: uppercase;
+	animation: blur 0.5s linear infinite alternate-reverse;
+	text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+	line-height: 1.1;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.gamecardContainer {
+	border: 5px solid;
+	border-image-slice: 1;
+	border-image-source: linear-gradient(to left, #743ad5, #5fdfff);
+	outline-offset: 5px;
+	display: flex;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-size: 100% 100%;
+	background-position: center;
+	margin: 0.5em; /* to change with media q. */
+	min-height: 60vh; /* to change with media q. */
+	width: 40vw; /* to change with media q. */
+	font-size: 1.5rem;
+	justify-content: space-between;
+	cursor: pointer;
+	position: relative;
+	animation: w1 1.5s ease-in-out infinite alternate-reverse;
+}
+
+.gamecardContainer:hover {
+	outline: 0.085em solid #ff00d4;
+}
+
+.content {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+@media only screen and (max-width: 3000px) {
+	.gamecardContainer {
+		font-size: 2rem;
+		min-height: 60vh;
+		width: 40vh;
+	}
+}
+
+@media only screen and (max-width: 1700px) {
+	.gamecardContainer {
+		font-size: 1.8rem;
+		min-height: 55vh;
+		width: 38vh;
+	}
+}
+
+@media only screen and (max-width: 1300px) {
+	.gamecardContainer {
+		font-size: 1.8rem;
+		min-height: 55vh;
+		width: 38vh;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.gamecardContainer {
+		font-size: 1.8rem;
+		min-height: 37vh;
+		width: 30vh;
+		margin: 1em;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.gamecardContainer {
+		font-size: 1.6rem;
+		min-height: 32vh;
+		width: 25vh;
+		margin: 1.2em;
+	}
+}
+
+@keyframes blur {
+	from {
+		text-shadow: 0px 0px 4px #cbfaff, 0px 0px 4px #cbfaff,
+			0px 0px 5px #cbfaff, 0px 0px 6px #cbfaff, 0px 0px 7px #5fdfff;
+	}
+}
+
+@keyframes w1 {
+	from {transform: rotate(-0.75deg)}
+	to {transform:rotate(0.75deg)}
+}

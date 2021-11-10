@@ -1,0 +1,68 @@
+.votesContainer {
+    width: 100%;
+    text-align: center;
+    color: #e9f9ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px #fff,0px 0px 9px #dadada;
+    padding: 1em 0.5em;
+}
+
+.votesHeader {
+    font-size: 1.85rem;
+    text-decoration: underline;
+    margin-bottom: 0.25em;
+    text-shadow: 0px 0px 2px #fff, 0px 0px 2px #dadada;
+}
+
+.vote {
+    width: 100%;
+    margin-bottom: 0.55em;
+    color: #5e5eff;
+    text-shadow: 0px 0px 3px #0054f0, 0px 0px 4px #2414db;
+    font-size: 1.15rem;
+}
+
+.vote:first-of-type {
+    color: #ff3232;
+    text-shadow: 0px 0px 3px #a00000, 0px 0px 4px #a70000;
+}
+
+
+.barsContainer {
+    width: 100%;
+}
+
+.characterBar1 {
+    margin-top: 0.25em;
+    background:#ff3232;
+    height: 1.75em;
+    align-self: flex-start;
+    box-shadow: 0px 0px 5px #a00000, 0px 0px 7px #a70000;
+    transition: width 1s;
+}
+
+.characterBar2 {
+    background: #5e5eff;
+    height: 1.75em;
+    align-self: flex-start;
+    box-shadow: 0px 0px 5px #0054f0, 0px 0px 7px #2414db;
+    transition: width 1s;
+}
+
+@media only screen and (max-width: 900px) {
+    .votesContainer {
+        margin: 1em 0;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .votesContainer {
+        width: 100%;
+    }
+}
